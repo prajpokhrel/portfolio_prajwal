@@ -1,0 +1,21 @@
+.contact__content {
+    height: auto;
+    padding-left: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.contact__heading {
+    padding-top: 0;
+    /*font-weight: lighter;*/
+}
+
+.contact__email {
+    text-decoration: none;
+    color: #212529;
+}
+
+.contact__email:hover {
+    text-decoration: none;
+    color: #17BF63;
+}

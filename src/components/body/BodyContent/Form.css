@@ -1,0 +1,177 @@
+.form__contents {
+    padding-top: 15px;
+    padding-left: 0;
+}
+
+.submitted__messages {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    /*background-color: red;*/
+}
+
+.inline-form{
+    margin-top: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.inline__form .input-data{
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.inline__form .input-data textarea {
+    resize: none;
+}
+
+.inline__form .input-data input, textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    border-bottom: 2px solid #212529;
+}
+
+.input-data input:focus ~ label,
+.input-data textarea:focus ~ label,
+.input-data textarea:valid ~ label,
+.input-data input:valid ~ label{
+    transform: translateY(-30px);
+    font-size: 20px;
+    color: #17BF63;
+}
+
+.inline__form .input-data label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    color: #212529;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.input-data .underline{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+}
+.input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #17BF63;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline:before,
+.input-data textarea:focus ~ .underline:before,
+.input-data textarea:valid ~ .underline:before,
+.input-data input:valid ~ .underline:before {
+    transform: scaleX(1);
+}
+
+
+
+/*Type writer animation: Input Boxes*/
+.label__animation {
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+/* Animation */
+.label__animation {
+    animation: animated-text 1s steps(30,end) 0.5s 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 472px;}
+}
+
+/* Message display animation: Displaying Messages */
+.submitted__messages-animation1,
+.submitted__messages-animation2{
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 !important;
+    /*background-color: red;*/
+}
+
+.name__label,
+.email__label {
+    color: #17BF63;
+    font-weight: bold;
+}
+
+.info__edit:hover {
+    color: #17BF63;
+    border-bottom: 1px solid #17BF63;
+    cursor: pointer;
+}
+
+.info__edit {
+    border-bottom: 1px solid #17BF63;
+}
+
+/* Animation */
+.submitted__messages-animation1 {
+    animation: animate-text1 1s steps(30,end) 0.5s 1 normal both;
+}
+
+.submitted__messages-animation2{
+    animation: animate-text2 1s steps(30,end) 0.5s 1 normal both;
+}
+
+/* text animation */
+
+@keyframes animate-text1{
+    from{width: 0;}
+    to{width: 30%;}
+}
+
+@keyframes animate-text2{
+    from{width: 0;}
+    to{width: 50%}
+}
+
+/*Buttons CSS*/
+
+.next__button,
+.submit__button{
+    background-color: #17BF63;
+    height: 35px;
+    margin-right: 15px;
+    width: 15%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    outline: none;
+    letter-spacing: 2px;
+}
+
+.next__button:hover,
+.submit__button:hover{
+    background-color: #212529;
+    color: #17BF63;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.next__button span,
+.submit__button span{
+    font-size: 16px;
+}
+
+
+
