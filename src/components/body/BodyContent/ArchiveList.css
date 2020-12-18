@@ -1,0 +1,51 @@
+.archive__listContainer {
+    padding: 0;
+    margin-top: 50px;
+}
+
+.archive__table {
+    /*background: red;*/
+}
+
+.table__title {
+    color: #8892B0;
+    font-size: 20px;
+}
+
+.table__year {
+    color: #64FFDA;
+}
+
+.table__projectTitle {
+    color: #CCD6F6;
+    font-size: 20px;
+}
+
+.table__description {
+    font-size: 16px;
+    color: #8892B0;
+}
+
+.archive__table td {
+    border: none;
+}
+
+.archive__table tr:hover {
+    background: #172A45;
+}
+
+.archive__links i {
+    font-size: 18px;
+    color: #A8B2D1;
+    justify-content: center;
+    align-self: center;
+    /*margin-top: 8px;*/
+}
+
+.archive__links i:hover {
+    color: #64FFDA;
+}
+
+.archive__links {
+    margin-right: 10px !important;
+}

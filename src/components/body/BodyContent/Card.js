@@ -1,31 +1,123 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Card.css";
+import diabetic from "../../../assets/media/diabetic_retinopathy.png";
+import sorting from "../../../assets/media/sorting_algorithms_visualization.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Card = (props) => {
+
+    useEffect(() => {
+        Aos.init();
+    }, []);
+
     return (
-        <div className="col-sm-6">
-            <div className="card">
-                <div className="card-body">
-                    {/*Image sample on card*/}
-                    <div className="card__contents">
-                        <img src={props.imageSrc} alt="Avatar" className="image" />
-                            <div className="overlay">
-                                <div className="text">
-                                    <h3>{props.title}</h3>
-                                    <p>{props.description}</p>
-                                </div>
-                                <a href={props.demoURL} target="_blank" className="card__button">visit project</a>
+        <div className="container-fluid card__container">
+            <div data-aos="fade-up" className="row">
+                <div className="col-sm-5 order-2 order-sm-1 card__left">
+                    <h3 className="project__number">01.</h3>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="project__title">
+                                <span>Featured Project</span>
+                                <h2>Diabetic Retinopathy</h2>
                             </div>
+                        </div>
                     </div>
-                    {/*End image sample*/}
-                    <p className="card-text">
-                        <span>Python</span>&nbsp;|&nbsp;
-                        <span>Python</span>&nbsp;|&nbsp;
-                        <span>Python</span>&nbsp;|&nbsp;
-                        <span>Python</span>&nbsp;|&nbsp;
-                        <span>Python</span>&nbsp;|&nbsp;
-                    </p>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="project__description">
+                            <span>This web app was built using React JS to visualize different sorting
+                                    algorithms in action. This project was done to learn classic sorting algorithms
+                                    and also improve my React skills.
+
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="project__tech">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Python</li>
+                                <li>Django</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="project__link">
+                                <button className="card__demoBtn">Demo&nbsp;&nbsp;<i className="fas fa-external-link-alt"/></button>
+                                <a href="#" className="project__github"><i className="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                <div className="col-sm-7 order-1 order-sm-2 card__right">
+                    <div className="card__wrapper">
+                        <div className="overlay"></div>
+                        <img src={diabetic} className="card__image" alt="image"/>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div data-aos="fade-up" className="row">
+                <div className="col-sm-5 order-2 order-sm-1 card__left">
+                    <h3 className="project__number">02.</h3>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="project__title">
+                                <span>Featured Project</span>
+                                <h2>Sorting Algorithms Visualizer</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="project__description">
+                            <span>This web app was built using React JS to visualize different sorting
+                                    algorithms in action. This project was done to improve my React skills
+                                    and also learn classic sorting algorithms.
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="project__tech">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Python</li>
+                                <li>Django</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="project__link">
+                                <button className="card__demoBtn">Demo&nbsp;&nbsp;<i className="fas fa-external-link-alt"/></button>
+                                <a href="#" className="project__github"><i className="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="col-sm-7 order-1 order-sm-2 card__right">
+
+                    <div className="card__wrapper">
+                        <div className="overlay"></div>
+                        <img src={sorting} className="card__image" alt="image2"/>
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
     );

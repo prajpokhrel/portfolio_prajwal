@@ -1,0 +1,12 @@
+.archive__container {
+    padding-left: 0;
+    padding-top: 50px;
+}
+
+.archive__header {
+    color: #CCD6F6;
+}
+
+.archive__description {
+    color: #64FFDA;
+}

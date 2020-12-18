@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container-fluid footer">
             <div className="row">
                 <div className="col text-center footer__content">
-                    <h2><small><strong>Let's talk</strong></small></h2>
+                    <h2 className="footer__title"><small><strong>Let's connect</strong></small></h2>
                     <p>Wanna get in touch or talk about a project?</p>
                     <p>
                         Feel free to contact me via email at <strong>

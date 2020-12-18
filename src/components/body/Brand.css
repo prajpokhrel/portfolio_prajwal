@@ -1,0 +1,16 @@
+.brand {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    background-color: #0a192f;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand__title {
+    font-family: 'Chilanka', cursive;
+    color: #64FFDA;
+}
+

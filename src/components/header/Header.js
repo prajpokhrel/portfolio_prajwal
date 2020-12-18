@@ -7,14 +7,14 @@ const Header = () => {
         <div className="container-fluid header">
             <div className="row">
                 {/*Top left*/}
-                <div className="col-sm-2"></div>
+                <div className="col-sm-1"></div>
 
-                <div className="col-sm-8" style={{paddingRight:0, paddingLeft:0}}>
+                <div className="col-sm-10" style={{paddingRight:0, paddingLeft:0}}>
                     <NavigationBar />
                 </div>
 
                 {/*Top right*/}
-                <div className="col-sm-2"></div>
+                <div className="col-sm-1"></div>
             </div>
         </div>
     );

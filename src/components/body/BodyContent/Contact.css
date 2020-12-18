@@ -4,18 +4,44 @@
     padding-top: 20px;
     box-sizing: border-box;
 }
+.contact__content span {
+    color: #64FFDA;
+}
+
+@media (max-width: 576px) {
+    .contact__content {
+        padding-left: 15px !important;
+    }
+}
 
 .contact__heading {
     padding-top: 0;
-    /*font-weight: lighter;*/
+    color: #CCD6F6;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/*h1::after {*/
+/*    content: "";*/
+/*    width: 20%;*/
+/*    height: 1px;*/
+/*    margin-left: 20px;*/
+/*    background: #172A45;*/
+/*    top: 50%;*/
+/*    position: absolute;*/
+/*}*/
+
+.contact__description {
+    color: #8892B0;
 }
 
 .contact__email {
     text-decoration: none;
-    color: #212529;
+    color: #CCD6F6;
 }
 
 .contact__email:hover {
     text-decoration: none;
-    color: #17BF63;
+    color: #64FFDA;
 }

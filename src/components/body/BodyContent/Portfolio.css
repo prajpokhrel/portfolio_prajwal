@@ -4,12 +4,31 @@
     padding-top: 25px;
 }
 
-.portfolio__header {
-    padding-top: 0;
-    /*font-weight: lighter;*/
+.portfolio__description {
+    color: #8892B0;
 }
 
-.card__container {
-    padding: 0;
-    margin-top: 20px;
+@media (max-width: 576px) {
+    .portfolio__content {
+        padding-left: 15px !important;
+    }
 }
+
+.portfolio__header {
+    padding-top: 0;
+    color: #CCD6F6;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-weight: bold;
+}
+
+/*h1::after {*/
+/*    content: "";*/
+/*    width: 20%;*/
+/*    height: 1px;*/
+/*    margin-left: 20px;*/
+/*    background: #172A45;*/
+/*    top: 50%;*/
+/*    position: absolute;*/
+/*}*/
+

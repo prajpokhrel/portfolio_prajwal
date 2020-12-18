@@ -10,17 +10,19 @@ const NavigationBar = () => {
                     <strong>prajwal</strong>
                     <small>pokhrel</small><strong>.</strong>
                 </h3></NavLink>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                <button className="navbar-toggler custom__toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    {/*<span className="navbar-toggler-icon"></span>*/}
+                    <i className="fas fa-bars"></i>
+                    {/*<i className="fa fa-angle-down"></i>*/}
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <NavLink activeClassName="navigation__active" className="nav-link" exact to="/">about</NavLink>
-                        <NavLink activeClassName="navigation__active" className="nav-link" exact to="/portfolio">portfolio</NavLink>
-                        {/*<Link activeClassName="navigation__active" className="nav-link" to="/education">education</Link>*/}
-                        <NavLink activeClassName="navigation__active" className="nav-link" exact to="/contact">contact</NavLink>
+                        <NavLink activeClassName="navigation__active" className="nav-link" exact to="/"><span>01.</span>&nbsp;about</NavLink>
+                        <NavLink activeClassName="navigation__active" className="nav-link" exact to="/portfolio"><span>02.</span>&nbsp;portfolio</NavLink>
+                        <NavLink activeClassName="navigation__active" className="nav-link" exact to="/contact"><span>03.</span>&nbsp;contact</NavLink>
                     </div>
+                    <button className="nav__resumeBtn">Resume</button>
                 </div>
             </nav>
         </div>

@@ -17,7 +17,7 @@ const Social = () => {
         <div className="container-fluid social">
             <div className="row">
                 <div className="col-sm social__content">
-                    <h2 className="text-center"><small><strong>let's get social</strong></small></h2>
+                    <h2 className="text-center social__title"><small><strong>Let's Get Social</strong></small></h2>
                     <div className="wrapper d-flex justify-content-center">
 
                         {socialMedias.map(items => {
@@ -26,7 +26,7 @@ const Social = () => {
                                     <div className="icon">
                                         {items.icon}
                                     </div>
-                                    <span>{items.name}</span>
+                                    {/*<span>{items.name}</span>*/}
                                 </div>
                             );
                         })}
